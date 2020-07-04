@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img
+      class="currencyIcon"
+      id="currencyIcon"
+      src="Resources/images/rupee.svg"
+      alt="currency image"
+      width="10%"
+    />
+    <h1>Exchange Rate Calculator</h1>
+    <div class="container" id="container">
+      <div class="currencyContainer" id="currencyContainer">
+        <div class="fromCurrency" id="fromCurrency">
+          <select
+            name="fromCurrencyS"
+            class="fromCurrencyS"
+            id="fromCurrencyS"
+          ></select>
+          <input
+            type="number"
+            class="fromAmount"
+            id="fromAmount"
+            placeholder="1"
+            value="1"
+          />
+        </div>
+        <div class="swapContainer" id="swapContainer">
+          <button type="button" id="swap" class="swap">SWAP</button>
+        </div>
+        <div class="toCurrency" id="toCurrency">
+          <select
+            name="toCurrencyS"
+            class="fromCurrencyS"
+            id="toCurrencyS"
+          ></select>
+          <input type="number" class="toAmount" id="toAmount" placeholder="1" />
+        </div>
+      </div>
+      <div class="textDiv" id="textDiv">
+        <div class="fromText">
+          <span class="fromValue" id="fromValue">1</span>
+          <span class="fromCurrencyName" id="fromCurrencyName">INR</span>
+        </div>
+        <div class="equals">
+          equals
+        </div>
+        <div class="toText">
+          <span class="toValue" id="toValue">1</span>
+          <span class="toCurrencyName" id="toCurrencyName">INR</span>
+        </div>
+      </div>
+    </div>
+    <div id="flatIconRef" class="flatIconRef">
+      Icons made by
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

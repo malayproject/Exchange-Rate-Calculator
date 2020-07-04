@@ -1,0 +1,171 @@
+/* @font-face {
+  font-family: "liberation_serifregular";
+  src: url("LiberationSerif-Regular-webfont.eot");
+  src: url("LiberationSerif-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("LiberationSerif-Regular-webfont.woff") format("woff"),
+    url("LiberationSerif-Regular-webfont.svg#liberation_serifregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "Encode Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap");
+}
+* {
+  box-sizing: border-box;
+  font-family: "Encode Sans", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  background-image: url("Resources/images/money-4027746_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+  text-shadow: 0px 0px 15px #400;
+  color: #fc0;
+}
+.currencyIcon {
+  margin: 10px;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 10px;
+}
+.currencyContainer {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 5%; */
+}
+.fromCurrency {
+  width: 60%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.fromCurrencyS {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align-last: right;
+  margin: 2px;
+  border: 0px;
+  border-radius: 5px;
+}
+.opt {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  text-align-last: right;
+}
+.fromAmount {
+  width: 100%;
+  text-align: right;
+  margin: 2px;
+  border: 0px;
+  border-radius: 5px;
+}
+.toCurrencyS {
+  width: 100%;
+  background-color: #ff0;
+  color: #000;
+  font-weight: bold;
+  margin: 2px;
+  text-align-last: right;
+  border: 0px;
+  border-radius: 5px;
+}
+.toAmount {
+  width: 100%;
+  text-align: right;
+  margin: 2px;
+  border: 0px;
+  border-radius: 5px;
+}
+.swapContainer {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.swap {
+  background-color: #fc0;
+  border: 0;
+  border-radius: 3px;
+}
+.toCurrency {
+  width: 60%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.textDiv {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: #fc0;
+  font-weight: 800;
+  /* margin-left: 5%; */
+}
+.fromText {
+  padding: 5px;
+  font-size: xx-large;
+}
+.equals {
+  padding: 5px;
+  font-size: x-large;
+}
+.toText {
+  padding: 5px;
+  font-size: xx-large;
+}
+
+.flatIconRef {
+  margin-top: 130px;
+  font-size: small;
+}
+@media (max-width: 800px) {
+  .currencyIcon {
+    width: 20%;
+  }
+  .fromCurrency {
+    width: 100%;
+  }
+  .toCurrency {
+    width: 100%;
+  }
+}
